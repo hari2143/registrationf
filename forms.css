@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(135deg, rgba(180, 72, 223, 0.767), rgba(33, 108, 170, 0.814));
+
+    .container {
+        max-width: 700px;
+        width: 100%;
+        background: whitesmoke;
+        padding: 25px 30px;
+        border-radius: 5px;
+
+        .title {
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        form {
+            .user-details {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                margin: 20px 0 12px 0;
+
+                
+                .inputbox {
+                    margin-bottom: 15px;
+                    width: calc(100% / 2 - 20px);
+
+                    /* border: 2px solid ; */
+                    input {
+                        height: 45px;
+                        width: 100%;
+                        outline: none;
+                        border-radius: 5px;
+                        border: 1px solid black;
+                        padding-left: 15px;
+                        font-size: 16px;
+                        border-bottom-width: 2px;
+                    }
+                }
+            }
+
+            .gender-details {
+                .gender-title {
+                    font-size: 20px;
+                    font-weight: 500;
+                }
+
+                .category {
+
+                    display: flex;
+                    width: calc(80%);
+                    justify-content: space-between;
+                    margin: 14px 0;
+
+                    label {
+                        input,span{
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+
+            .button {
+                height: 45px;
+                margin: 45px 0;
+
+                input {
+                    cursor: pointer;
+                    height: 100%;
+                    width: 100%;
+                    font-size: 18px;
+                    font-weight: 700;
+                    color: white;
+                    border: none;
+                    outline: none;
+                    border-radius: 5px;
+                    background: linear-gradient(135deg, rgba(26, 134, 206, 0.91), rgba(180, 72, 199, 0.814));
+                    letter-spacing: 1px;
+                }
+
+                input:hover {
+                    background: linear-gradient(-135deg, rgba(26, 134, 206, 0.91), rgba(180, 72, 199, 0.814));
+                }
+            }
+        }
+    }
+}
